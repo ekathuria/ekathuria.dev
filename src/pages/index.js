@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
 // import Lightbox from 'react-images'
-import Gallery from '../components/Gallery'
+//import Gallery from '../components/Gallery'
 
 import thumb01 from '../assets/images/thumbs/01.jpg'
 import thumb02 from '../assets/images/thumbs/02.jpg'
@@ -31,8 +31,8 @@ const DEFAULT_IMAGES = [
 class HomeIndex extends React.Component {
 
     render() {
-        const siteTitle = "Gatsby Starter - Strata"
-        const siteDescription = "Site description"
+        const siteTitle = "E Kathuria"
+        const siteDescription = "Personal website for E Kathuria"
 
         return (
             <Layout>
@@ -49,25 +49,25 @@ class HomeIndex extends React.Component {
                             magna sed accumsan arcu neque.</h2>
                         </header>
                         <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-                        <ul className="actions">
+                        {/* <ul className="actions">
                             <li><a href="#" className="button">Learn More</a></li>
-                        </ul>
+                        </ul> */}
                     </section>
 
-                    <section id="two">
-                        <h2>Recent Work</h2>
+                    {/* <section id="two">
+                        <h2>Recent Work - Coming Soon</h2> */}
 
-                        <Gallery images={DEFAULT_IMAGES.map(({ id, source, thumbnail, caption, description }) => ({
+                        {/* <Gallery images={DEFAULT_IMAGES.map(({ id, source, thumbnail, caption, description }) => ({
                             source,
                             thumbnail,
                             caption,
                             description
-                        }))} />
+                        }))} /> */}
 
-                        <ul className="actions">
+                        {/* <ul className="actions">
                             <li><a href="#" className="button">Full Portfolio</a></li>
-                        </ul>
-                    </section>
+                        </ul> */}
+                    {/* </section> */}
 
                     <section id="three">
                         <h2>Get In Touch</h2>
@@ -89,14 +89,12 @@ class HomeIndex extends React.Component {
                                 <ul className="labeled-icons">
                                     <li>
                                         <h3 className="icon fa-home"><span className="label">Address</span></h3>
-                                        1234 Somewhere Rd.<br />
-                                        Nashville, TN 00000<br />
-                                        United States
+                                        ATL, GA | United States
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
                                         000-000-0000
-                                    </li>
+                                    </li> */}
                                     <li>
                                         <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
                                         <a href="#">hello@untitled.tld</a>
