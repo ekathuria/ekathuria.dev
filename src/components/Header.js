@@ -24,11 +24,10 @@ class Header extends React.Component {
                         <defs>
                             <linearGradient id="eGradient" x1="100%" y1="100%">
                                 <stop offset="0%" stop-color="white" stop-opacity="1">
-                                    <animate attributeName="stop-color" values="#ffffff;#964BFF;#D64BFF;#FF4BD3;#FF4B7E;#FF594B;#FF7C4B;#ffffff" dur="20s" repeatCount="1"></animate>
+                                    <animate attributeName="stop-color" values="#ffffff;#964BFF;#D64BFF;#D2B2FF;#ffffff;" dur="7s" repeatCount="1"></animate>
                                 </stop>
                                 <stop offset="100%" stop-color="white" stop-opacity="1">
                                     <animate attributeName="stop-color" values="#ffffff;" dur="5s" repeatCount="1"></animate>
-                                    <animate attributeName="offset" values=".95;.80;.60;.40;.20;0;.20;.40;.60;.80;.95" dur="14s" repeatCount="1"></animate>    
                                 </stop>
                             </linearGradient>
                         </defs>
