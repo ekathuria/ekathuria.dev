@@ -67,7 +67,7 @@
 	a {
 		@include vendor('transition', ('color #{_duration(transition)} ease-in-out', 'border-color #{_duration(transition)} ease-in-out'));
 		border-bottom: dotted 1px;
-		color: _palette(accent1, bg);
+		color: _palette(purple);
 		text-decoration: none;
 
 		&:hover {
@@ -91,7 +91,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: _palette(fg-bold);
+		color: _palette(purple);
 		font-weight: _font(weight-bold);
 		line-height: 1em;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
@@ -452,7 +452,7 @@
 
 		&:before {
 			@include vendor('transition', 'opacity #{_duration(transition)} ease-in-out');
-			background: url('images/overlay.png');
+			// background: url('images/overlay.png');
 			border-radius: _size(border-radius);
 			content: '';
 			display: block;
@@ -689,6 +689,7 @@
 				margin: 1.5em 0 0 0;
 				padding-left: 2.25em;
 				position: relative;
+				color: _palette(purple);
 
 				&:first-child {
 					margin-top: 0;
@@ -901,9 +902,9 @@
 		@include vendor('flex-direction', 'column');
 		@include vendor('align-items', 'flex-end');
 		@include vendor('justify-content', 'space-between');
-		background-color:		_palette(accent2, bg);
+		background-color:		_palette(purple);
 		background-attachment:	scroll,								fixed;
-		background-image:		url('images/overlay.png'),			url('../images/bg.jpg');
+		// background-image:					url('../images/clouds.jpg');
 		background-position:	top left,							top left;
 		background-repeat:		repeat,								no-repeat;
 		background-size:		auto,								auto 100%;
@@ -912,7 +913,7 @@
 		left: 0;
 		padding: ($size-header-pad * 2) $size-header-pad;
 		position: fixed;
-		text-align: right;
+		text-align: center;
 		top: 0;
 		width: $size-header-width;
 
@@ -954,7 +955,7 @@
 			margin: (_size(element-margin) * 0.5) 0 0 0;
 
 			a {
-				color: _palette(accent2, fg-light);
+				color: _palette(accent2, fg-bold);
 			}
 		}
 
@@ -1367,6 +1368,7 @@
 				&.labeled-icons {
 					li {
 						padding-left: 2em;
+						color: _palette(purple);
 
 						h3 {
 							line-height: 1.75em;
