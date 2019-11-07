@@ -45,13 +45,10 @@ class HomeIndex extends React.Component {
 
                     <section id="one">
                         <header className="major">
-                            <h2>Ipsum lorem dolor aliquam ante commodo<br />
-                            magna sed accumsan arcu neque.</h2>
+                            <h2>About Me</h2>
                         </header>
-                        <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-                        {/* <ul className="actions">
-                            <li><a href="#" className="button">Learn More</a></li>
-                        </ul> */}
+                        <p>I write code for the web&mdash;professionally and as a hobby. My primary tools of the trade these days are React, Node.js, and Express, and GraphQL, but I'm looking to get into Electron and playing around with Svelte as well.</p>
+                        <p>I like to (in no particular order) read, sleep, study (web development, of course), <a href="https://www.last.fm/user/ekathuria" target="_blank">listen to music</a> and podcasts, and hang out with my kids, Mikey and Ziggy 🤗</p>
                     </section>
 
                     {/* <section id="two">
@@ -71,7 +68,7 @@ class HomeIndex extends React.Component {
 
                     <section id="three">
                         <h2>Get In Touch</h2>
-                        <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+                        <p>Send me a message if you want to.</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
                                 <form method="post" action="#">
@@ -97,7 +94,7 @@ class HomeIndex extends React.Component {
                                     </li> */}
                                     <li>
                                         <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
-                                        <a href="#">hello@untitled.tld</a>
+                                        <a href="mailto:hello@ekathuria.dev">hello@ekathuria.dev</a>
                                     </li>
                                 </ul>
                             </div>
