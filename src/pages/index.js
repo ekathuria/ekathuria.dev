@@ -48,7 +48,7 @@ class HomeIndex extends React.Component {
                             <h2>About Me</h2>
                         </header>
                         <p>I write code for the web&mdash;professionally and as a hobby. My primary tools of the trade these days are React, Node.js, and Express, and GraphQL, but I'm looking to get into Electron and playing around with Svelte as well.</p>
-                        <p>I like to (in no particular order) read, sleep, study (web development, of course), <a href="https://www.last.fm/user/ekathuria" target="_blank">listen to music</a> and podcasts, and hang out with my kids, Mikey and Ziggy 🤗</p>
+                        <p>When I'm not coding I like to (in no particular order) read, sleep, study (web development, of course &#x1F913;), <a href="https://www.last.fm/user/ekathuria" target="_blank">listen to music</a> and podcasts, and hang out with my kids, Mikey and Ziggy.</p>
                     </section>
 
                     {/* <section id="two">
