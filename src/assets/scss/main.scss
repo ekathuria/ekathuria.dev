@@ -442,15 +442,26 @@
 		}
 	}
 
-	.fab {
-		&::before {
-			font-size: 1.5em;
-		}
+
+	.fab,
+	.fas {
 		border-bottom: none;
 
 		> .label {
 			display: none;
 		}
+	}
+
+	.fab::before {
+		font-size: 1.5em;
+	}
+
+	.fas::before {
+		position:relative;
+		top: 2px;
+	}
+	.fas.fa-envelope::before {
+		top: 7px;
 	}
 
 /* Image */
