@@ -442,6 +442,17 @@
 		}
 	}
 
+	.fab {
+		&::before {
+			font-size: 1.5em;
+		}
+		border-bottom: none;
+
+		> .label {
+			display: none;
+		}
+	}
+
 /* Image */
 
 	.image {
