@@ -47,8 +47,9 @@ class HomeIndex extends React.Component {
                         <header className="major">
                             <h2>About Me</h2>
                         </header>
-                        <p>I write code for the web&mdash;professionally and as a hobby. My primary tools of the trade these days are React, Node, Express, and GraphQL, but I'm looking to learn more about Vue and Svelte, and playing around with Electron as well.</p>
-                        <p>When I'm not coding I like to (in no particular order) read, sleep, study (web development, of course <span role="img" aria-label="Nerdface">&#x1F913;</span>), <a href="https://www.last.fm/user/ekathuria" target="_blank" rel="noopener noreferrer">listen to music</a> and podcasts, and hang out with my kids, Mikey and Ziggy.</p>
+                        <p>I write code for the web, professionally and as a hobby. My primary tools of the trade these days are React, Node, Express, and GraphQL, but I'm starting to delve into Vue and Svelte, playing around with Electron, and planning to learn shell scripting at some point.</p>
+                        <p>I'm relatively proficient on the command line (just enough to be dangerous), with Zsh being my shell of choice, and Vim my preference for editing text. Outside of the command line, I use Visual Studio Code (with the awesome VSCode Vim emulator extension) as a text editor, after years of using Sublime Text and then Atom.</p>
+                        <p>When I'm not coding, I like to (in no particular order) read, sleep, study (web development, of course <span role="img" aria-label="Nerdface">&#x1F913;</span>), <a href="https://www.last.fm/user/ekathuria" target="_blank" rel="noopener noreferrer">listen to music</a> and podcasts, and hang out with my kids, Mikey and Ziggy.</p>
                     </section>
 
                     {/* <section id="two">
