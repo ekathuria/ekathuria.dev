@@ -10,7 +10,7 @@ import TextLoop from "react-text-loop";
 class FlipText extends React.Component {
     render() {
         return (
-                <TextLoop>
+                <TextLoop springConfig={ {stiffness: 340, damping: 30} }>
                     <div className="subHeadline developer"><span>Web Developer</span></div>
                     <div className="subHeadline programmer"><span>Programmer</span></div>
                     <div className="subHeadline musician"><span>Erstwhile musician</span></div>

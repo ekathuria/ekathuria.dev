@@ -15,7 +15,7 @@ class Logo extends React.Component {
                 <defs>
                     <linearGradient id="eGradient" x1="100%" y1="100%">
                         <stop offset="0%" stop-color="white" stop-opacity="1">
-                            <animate attributeName="stop-color" values="#ffffff;#964BFF;#D64BFF;#D2B2FF;#ffffff;" dur="7s" repeatCount="1"></animate>
+                            <animate attributeName="stop-color" values="#ffffff;#D6419F;#D2C53E;#49BF9D;#ED6447;#ffffff;" dur="12s" repeatCount="1"></animate>
                         </stop>
                         <stop offset="100%" stop-color="white" stop-opacity="1">
                             <animate attributeName="stop-color" values="#ffffff;" dur="5s" repeatCount="1"></animate>
