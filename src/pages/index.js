@@ -46,7 +46,7 @@ class HomeIndex extends React.Component {
                         <header className="major">
                             <h2>About Me</h2>
                         </header>
-                        <p>I write code for the web, professionally and as a hobby. My primary tools of the trade these days are React, Node, Express, and GraphQL, but I'm starting to delve into Vue and Svelte and playing around with Electron. In the future, I'd like to get back into Python, learn shell scripting, and also Go.</p>
+                        <p>I write code for the web, professionally and as a hobby. My primary tools of the trade these days are React, Node, Express, and GraphQL, but I'm starting to delve into Vue and Svelte, and also playing around with Electron. In the future, I'd like to get back into Python, learn shell scripting, and Golang.</p>
                         <p>I'm relatively proficient on the command line (just enough to be dangerous), with Zsh being my shell of choice, and Vim my preference for editing text. Outside of the command line, I use Visual Studio Code (with the awesome VSCode Vim emulator extension) as a text editor, after years of using Sublime Text and Atom.</p>
                         <p>When I'm not coding, I try to catch up on sleep, and I like to expand my horizons by reading, studying, and listening to <a href="https://www.last.fm/user/ekathuria" target="_blank" rel="noopener noreferrer">music</a> and podcasts. Most of all, I enjoy spending time with my hilarious kids, Mikey and Ziggy. <span role="img" aria-label="Hugging Face">&#x1f917;</span></p>
                     </section>
