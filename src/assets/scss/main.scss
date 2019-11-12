@@ -964,9 +964,23 @@
 			margin: 0;
 		}
 
-		.image.avatar {
-			margin: 0 0 (_size(element-margin) * 0.5) 0;
-			width: 6.25em;
+		.subHeadline {
+			text-align: center;
+			width: 250px;
+			font-style: italic;
+
+			&.developer {
+				color: #D6419F;
+			}
+			&.programmer {
+				color: #D2C53E;
+			}
+			&.musician {
+				color: #49BF9D;
+			}
+			&.student {
+				color: #ED6447;
+			}
 		}
 	}
 

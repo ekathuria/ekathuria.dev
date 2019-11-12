@@ -2,7 +2,7 @@ import React from 'react'
 
 import Footer from './Footer'
 import Logo from './Logo';
-import TextLoop from './FlipText'
+import FlipText from './FlipText'
 
 const h1Style = {
     textAlign: 'center',
@@ -17,7 +17,7 @@ class Header extends React.Component {
                        <Logo />
                    </div>
                    <h1 style={h1Style}><strong>Hello, I'm E!</strong></h1>
-                   <TextLoop />
+                   <FlipText />
                 </div>
                 <Footer />
             </header>

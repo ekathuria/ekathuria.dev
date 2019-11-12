@@ -1,19 +1,23 @@
-import TextLoop from "react-text-loop";
 import React from "react";
+import TextLoop from "react-text-loop";
 
+
+// const sub = {
+//     textAlign: 'center',
+//     width: '250px',
+//     fontStyle: 'italic',
+// }
 class FlipText extends React.Component {
     render() {
         return (
-            <h2>
                 <TextLoop>
-                    <span>Web Developer</span>
-                    <span>Programmer</span>
-                    <span>Erstwhile musician</span>
-                    <span>Perennial student</span>
+                    <div className="subHeadline developer"><span>Web Developer</span></div>
+                    <div className="subHeadline programmer"><span>Programmer</span></div>
+                    <div className="subHeadline musician"><span>Erstwhile musician</span></div>
+                    <div className="subHeadline student"><span>Perennial student</span></div>
                 </TextLoop>
-            </h2>
         );
     }
 }
 
-export default TextLoop;
+export default FlipText;
