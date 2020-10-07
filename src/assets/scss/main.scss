@@ -40,8 +40,8 @@
 		)
 	));
 
-	$size-header-width: 35%;
-	$size-header-pad: 4em;
+	$size-header-width: 100%;
+	// $size-header-pad: 4em;
 
 /* Basic */
 
@@ -921,19 +921,12 @@
 
 	#header {
 		@include vendor('display', 'flex');
-		@include vendor('flex-direction', 'column');
-		@include vendor('align-items', 'flex-end');
+		@include vendor('flex-direction', 'row');
+		@include vendor('align-items', 'center');
 		@include vendor('justify-content', 'space-between');
 		background-color:		_palette(purple);
-		background-attachment:	scroll,								fixed;
-		// background-image:					url('../images/clouds.jpg');
-		background-position:	top left,							top left;
-		background-repeat:		repeat,								no-repeat;
-		background-size:		auto,								auto 100%;
 		color: _palette(accent2, fg);
 		height: 100%;
-		left: 0;
-		padding: ($size-header-pad * 2) $size-header-pad;
 		position: fixed;
 		text-align: center;
 		top: 0;
@@ -946,7 +939,7 @@
 
 		> .inner {
 			@include vendor('flex-grow', '1');
-			margin: 0 0 ($size-header-pad * 0.5) 0;
+			// margin: 0 0 ($size-header-pad * 0.5) 0;
 		}
 
 		strong, b {
@@ -988,60 +981,23 @@
 
 	#footer {
 		.icons {
-			margin: (_size(element-margin) * 0.5) 0 0 0;
+      margin: (_size(element-margin) * 0.5) 0 0 0;
+      display: flex;
+      justify-content: space-around;
+      width: 360px;
+      align-items: center;
 
 			a {
 				color: _palette(accent2, fg-bold);
 			}
 		}
 
-		.copyright {
-			color: _palette(accent2, fg-light);
-			font-size: 0.8em;
-			list-style: none;
-			margin: (_size(element-margin) * 0.5) 0 0 0;
-			padding: 0;
-
-			li {
-				border-left: solid 1px _palette(accent2, border);
-				display: inline-block;
-				line-height: 1em;
-				margin-left: 0.75em;
-				padding-left: 0.75em;
-
-				&:first-child {
-					border-left: 0;
-					margin-left: 0;
-					padding-left: 0;
-				}
-
-				a {
-					color: inherit;
-				}
-			}
-		}
+    > .inner {
+      display: flex;
+      justify-content: center;
+    }
 	}
 
-/* Main */
-
-	#main {
-		margin-left: $size-header-width;
-		max-width: 50em + $size-header-pad;
-		padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
-		width: calc(100% - #{$size-header-width});
-
-		> section {
-			border-top: solid 2px _palette(border);
-			margin: $size-header-pad 0 0 0;
-			padding: $size-header-pad 0 0 0;
-
-			&:first-child {
-				border-top: 0;
-				margin-top: 0;
-				padding-top: 0;
-			}
-		}
-	}
 
 /* Poptrox */
 
@@ -1233,15 +1189,9 @@
 
 	@include breakpoint(large) {
 
-		$size-header-width: 30%;
-		$size-header-pad: 3em;
-
 		/* Header */
 
 			#header {
-				padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
-				width: $size-header-width;
-
 				h1 {
 					font-size: 1.25em;
 
@@ -1265,14 +1215,6 @@
 				}
 			}
 
-		/* Main */
-
-			#main {
-				margin-left: $size-header-width;
-				max-width: none;
-				padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
-				width: calc(100% - #{$size-header-width});
-			}
 
 	}
 
@@ -1280,7 +1222,7 @@
 
 	@include breakpoint(medium) {
 
-		$size-header-pad: 4em;
+		// $size-header-pad: 4em;
 
 		/* Basic */
 
@@ -1305,16 +1247,9 @@
 		/* Header */
 
 			#header {
-				background-attachment:	scroll;
-				background-position:	top left,	center center;
-				background-size:		auto,		cover;
-				left: auto;
-				padding: ($size-header-pad * 1.5) $size-header-pad;
-				position: relative;
 				text-align: center;
 				top: auto;
 				width: 100%;
-				display: block;
 
 				h1 {
 					font-size: 1.75em;
@@ -1330,33 +1265,15 @@
 			#footer {
 				bottom: auto;
 				left: auto;
-				padding: $size-header-pad $size-header-pad ($size-header-pad * 1.5) $size-header-pad;
 				position: relative;
 				text-align: center;
 				width: 100%;
-
-				.icons {
-					margin: 0 0 (_size(element-margin) * 0.5) 0;
-				}
-
-				.copyright {
-					margin: 0 0 (_size(element-margin) * 0.5) 0;
-
-					li {
-						border-left-width: 1px;
-						display: inline-block;
-						line-height: 1em;
-						margin-left: 0.75em;
-						padding-left: 0.75em;
-					}
-				}
 			}
 
 		/* Main */
 
 			#main {
 				margin: 0;
-				padding: ($size-header-pad * 1.5) $size-header-pad;
 				width: 100%;
 			}
 
@@ -1365,8 +1282,6 @@
 /* Small */
 
 	@include breakpoint(small) {
-
-		$size-header-pad: 1.5em;
 
 		/* Basic */
 
@@ -1398,58 +1313,13 @@
 				}
 			}
 
-		/* List */
 
-			ul {
-				&.labeled-icons {
-					li {
-						padding-left: 2em;
-						color: _palette(purple);
-
-						h3 {
-							line-height: 1.75em;
-						}
-					}
-				}
-			}
 
 		/* Header */
 
 			#header {
-				padding: ($size-header-pad * 1.5) $size-header-pad;
-
 				h1 {
 					font-size: 1.35em;
-				}
-			}
-
-		/* Footer */
-
-			#footer {
-				padding: ($size-header-pad * 1.5) $size-header-pad;
-			}
-
-		/* Main */
-
-			#main {
-				padding: ($size-header-pad * 1.5) $size-header-pad (($size-header-pad * 1.5) - _size(element-margin)) $size-header-pad;
-
-				> section {
-					margin: ($size-header-pad * 1.5) 0 0 0;
-					padding: ($size-header-pad * 1.5) 0 0 0;
-				}
-			}
-
-		/* Poptrox */
-
-			.poptrox-popup {
-				border-radius: 0;
-
-				.nav-next,
-				.nav-previous {
-					&:before {
-						margin-top: -1em;
-					}
 				}
 			}
 
@@ -1512,21 +1382,6 @@
 					}
 				}
 			}
-
-		/* Footer */
-
-			#footer {
-				.copyright {
-					li {
-						border-left-width: 0;
-						display: block;
-						line-height: 2.25em;
-						margin-left: 0;
-						padding-left: 0;
-					}
-				}
-			}
-
 	}
 
 @media screen and (max-width: 480px) {
